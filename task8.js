@@ -14,11 +14,11 @@ function timeMoments(num){
             let hour = num / 60;
             let min = num % 60;
             hour < 2 ? time = `${Math.floor(hour)} hour, `: time = `${Math.floor(hour)} hours, `
-            min < 2 ? time += `${min} minute` : time += `${min} minutes` 
+            min < 2 ? time += `${Math.floor(min)} minute` : time += `${Math.floor(min)} minutes` 
             console.log(time);
             break;
                     
     }
 }
 
-timeMoments(133);
+timeMoments(133.5);
