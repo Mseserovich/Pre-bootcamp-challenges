@@ -16,4 +16,4 @@ function mult(num){
     }));
 }
 
-mult(-1000);
+mult(1000);
