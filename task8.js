@@ -1,24 +1,13 @@
 function timeMoments(num){
-    switch (true) {
-        case num < 1 :
-            console.log('enter a positive value');
-            break;
-        case num === 1 :
-            console.log(`1 minute`);
-            break;
-        case (num < 60 && num > 1):
-            console.log(`${num} minutes`)
-            break;
-        case num > 60:
-            let time;
-            let hour = num / 60;
-            let min = num % 60;
-            hour < 2 ? time = `${Math.floor(hour)} hour, `: time = `${Math.floor(hour)} hours, `
-            min < 2 ? time += `${Math.floor(min)} minute` : time += `${Math.floor(min)} minutes` 
-            console.log(time);
-            break;
-                    
-    }
+    let time = "";
+    let hour = Math.floor(num / 60);
+    console.log(hour);
+    let min = num % 60;
+    
+    if (hour) (2 > hour > 0) ? time = `${Math.floor(hour)} hour, ` : time = `${Math.floor(hour)} hours, `;
+    if (min) (2 > min > 0) ? time += `${Math.floor(min)} minute ` : time += `${Math.floor(min)} minutes`;
+    console.log(time);
+
 }
 
-timeMoments(133.5);
+timeMoments(1);

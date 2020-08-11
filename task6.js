@@ -1,6 +1,6 @@
-function max(a, b, c){
+function max(...arguments){
     let arr = [...arguments];
-    console.log(arr.length)
+
     let maxi = arr[0];
 
     for(let i = 0; i < arr.length -1; i++){
@@ -9,8 +9,6 @@ function max(a, b, c){
         }
     
     }
-    console.log(maxi);
+    
     return maxi;
 }
-
-max(3, -1000);
